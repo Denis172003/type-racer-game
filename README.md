@@ -54,3 +54,14 @@ if (butonStart == LOW) {
         startRunda(); // Funcție pentru a începe runda
     }
 }
+```
+### 3. Setarea dificultății
+Apăsarea butonului de dificultate în modul de repaus permite selectarea nivelului de dificultate, ciclând între Easy, Medium, și Hard. Mesajul corespunzător apare în terminal.
+
+```cpp
+if (butonDificultate == LOW && !inRunda) {
+    delay(20); // Debouncing
+    schimbaDificultate(); // Actualizează dificultatea
+    Serial.println(dificultateSelectata); // “Easy/Medium/Hard mode on!”
+}
+```
