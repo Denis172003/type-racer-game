@@ -37,8 +37,6 @@ Proiectul TypeRacer simulează un joc în care utilizatorul trebuie să tasteze 
 
 ## Descrierea codului
 
-Codul este organizat pe baza a trei stări principale: **Repaus**, **Numărătoare inversă**, și **Rundă activă**.
-
 ### 1. Starea de repaus
 - LED-ul RGB este alb, iar jocul este inactiv, permițând utilizatorului să selecteze dificultatea sau să inițieze o rundă nouă.
 
