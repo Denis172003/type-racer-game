@@ -102,7 +102,7 @@ void initPins() {
 void initValues() {
   onChangeFree();
   randomSeed(millis());
-  Serial.println("Welcome to Arduino TypeRacer");
+  Serial.println("Welcome to Arduino TypeRacer!!!");
 }
 
 // Functie de initializare a timerelor
