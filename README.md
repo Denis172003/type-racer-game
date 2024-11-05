@@ -90,3 +90,35 @@ if (timpScurs >= 30000) { // Runda de 30 secunde
     Serial.println(contorCorect);
 }
 ```
+### 6. Resetarea jocului
+La încheierea unei runde sau la apăsarea butonului de stop în timpul unei runde active, LED-ul revine la culoarea albă, iar jocul este pregătit pentru o nouă rundă.
+
+```cpp
+if (!inRunda) {
+    LED_RGB_alb();
+    Serial.println("Jocul este resetat.");
+}
+```
+### Dicționarul de cuvinte
+Pentru acest proiect, se utilizează un dicționar simplu de cuvinte, generat aleatoriu la începutul fiecărei runde. Funcția `random()` din Arduino este folosită pentru a selecta cuvintele.
+
+```cpp
+const char* dicționar[] = {
+    "măr", "carte", "bucurie", "calculator", "arduino", 
+    "programare", "robot", "tehnologie", "electronică", "microcontroller"
+};
+
+int numarCuvinte = sizeof(dicționar) / sizeof(dicționar[0]);
+
+void afiseazaCuvant(const char* cuvant) {
+    Serial.print("Cuvântul: ");
+    Serial.println(cuvant);
+}
+
+const char* cuvantCurent;
+
+void selecteazaCuvant() {
+    cuvantCurent = dicționar[random(0, numarCuvinte)];
+    afiseazaCuvant(cuvantCurent);
+}
+
