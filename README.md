@@ -80,3 +80,13 @@ if (inRunda) {
     }
 }
 ```
+### 5. Finalizarea rundei
+După 30 de secunde, runda se termină, LED-ul RGB revine la alb, iar terminalul afișează scorul (numărul total de cuvinte scrise corect).
+
+```cpp
+if (timpScurs >= 30000) { // Runda de 30 secunde
+    stopRunda(); // Oprește runda
+    Serial.print("Scor final: ");
+    Serial.println(contorCorect);
+}
+```
