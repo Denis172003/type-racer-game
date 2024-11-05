@@ -65,3 +65,18 @@ if (butonDificultate == LOW && !inRunda) {
     Serial.println(dificultateSelectata); // “Easy/Medium/Hard mode on!”
 }
 ```
+### 4. Jocul propriu-zis (Rundă activă)
+La începutul rundei, un cuvânt aleatoriu din dicționar este afișat în terminal. Utilizatorul introduce cuvintele și, dacă acestea sunt corecte, LED-ul RGB se aprinde în verde și un cuvânt nou este afișat imediat. Dacă este greșit, LED-ul devine roșu. Un timer bazat pe dificultate controlează intervalul de timp până la afișarea următorului cuvânt.
+
+```cpp
+if (inRunda) {
+    cuvantCurent = dicționar[random(0, numarCuvinte)];
+    afiseazaCuvant(cuvantCurent); // Afișează cuvântul curent
+    if (verificaText(cuvantIntrodus)) {
+        LED_RGB_verde();
+        contorCorect++;
+    } else {
+        LED_RGB_rosu();
+    }
+}
+```
