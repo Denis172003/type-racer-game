@@ -99,7 +99,7 @@ if (!inRunda) {
     Serial.println("Jocul este resetat.");
 }
 ```
-### Schema electrica
+## Schema electrica
 <img width="698" alt="Screenshot 2024-11-05 at 23 47 22" src="https://github.com/user-attachments/assets/e49645b1-6191-422b-a0ff-02752f94440a">
 
 
