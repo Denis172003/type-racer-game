@@ -29,11 +29,7 @@ Proiectul TypeRacer simulează un joc în care utilizatorul trebuie să tasteze 
 
 ## Setup fizic
 
-![typeracer_game_setup](https://github.com/user-attachments/assets/e144ce73-05d9-4b70-a741-7418afd25ab4)
-
-**Schema de conectare**:
-
-<!-- Imagine cu schema de conectare pentru TypeRacer Game. -->
+![image](https://github.com/user-attachments/assets/5691c48d-b394-40e2-9e89-b313d4bcdfa0)
 
 ## Descrierea codului
 
