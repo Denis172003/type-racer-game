@@ -31,6 +31,8 @@ Proiectul TypeRacer simulează un joc în care utilizatorul trebuie să tasteze 
 
 ![image](https://github.com/user-attachments/assets/5691c48d-b394-40e2-9e89-b313d4bcdfa0)
 
+https://github.com/user-attachments/assets/00a28c83-85d3-4c37-935c-17f7e21e6595
+
 ## Descrierea codului
 
 ### 1. Starea de repaus
