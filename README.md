@@ -99,26 +99,3 @@ if (!inRunda) {
     Serial.println("Jocul este resetat.");
 }
 ```
-### Dicționarul de cuvinte
-Pentru acest proiect, se utilizează un dicționar simplu de cuvinte, generat aleatoriu la începutul fiecărei runde. Funcția `random()` din Arduino este folosită pentru a selecta cuvintele.
-
-```cpp
-const char* dicționar[] = {
-    "măr", "carte", "bucurie", "calculator", "arduino", 
-    "programare", "robot", "tehnologie", "electronică", "microcontroller"
-};
-
-int numarCuvinte = sizeof(dicționar) / sizeof(dicționar[0]);
-
-void afiseazaCuvant(const char* cuvant) {
-    Serial.print("Cuvântul: ");
-    Serial.println(cuvant);
-}
-
-const char* cuvantCurent;
-
-void selecteazaCuvant() {
-    cuvantCurent = dicționar[random(0, numarCuvinte)];
-    afiseazaCuvant(cuvantCurent);
-}
-
