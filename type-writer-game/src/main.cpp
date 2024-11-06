@@ -26,9 +26,9 @@ char *words[] = {
     "djibouti", "dallas", "bear", "beer",
     "fmi", "router", "universe", "wagon",
     "asteroid", "pasta", "python", "volcano",
-    "circuit", "galaxy", "mammoth", "yeti"
+    "circuit", "mammoth", "yeti"
 };
-const int wordCount = 28;
+const int wordCount = 27;
 
 // Definirea pinilor pentru leduri si butoane
 const int RED_PIN = 6;
